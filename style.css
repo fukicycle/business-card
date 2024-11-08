@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+	font-size: 16px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to bottom right, #D3EE98, #859F3D);
+	color: #1E1E1E;
+	overflow: hidden;
+}
+
+.card {
+	background-color: rgba(242,242,242,.5);
+	backdrop-filter: blur(60px);
+	border: solid 1px rgba(242,242,242,1);
+	border-radius: 8px;
+	height: 270px;
+	width: 480px;
+	padding: 16px;
+	box-shadow: 0 16px 32px 0 rgba(0,0,0,.25);
+}
+.section {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(2,minmax(0,1fr));
+	grid-template-rows:minmax(0,1fr);
+	grid-gap:4px;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 4px;
+	padding: 4px;
+}
+
+
+.company {
+	width:100%;
+	text-align: center;
+	font-size:36px;
+}
+
+.line {
+	width: 100%;
+	border:solid 1px #859F3D;
+}
+
+.sub {
+	width:100%;
+	text-align: center;
+	font-size: 12px;
+}
+
+.role {
+	font-size: 12px;
+}
+
+.name {
+	font-size: 28px;
+}
+
+.block{
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.item {
+	display: flex;
+	align-items:center;
+	gap:4px;
+}
+
+.info.detail {
+	gap: 32px;
+}
+
+@media screen and (max-width: 520px) {
+	.section {
+		grid-template-columns: minmax(0,1fr);
+		grid-template-rows:repeat(2,minmax(0,1fr));
+	}
+
+	.card {
+		height: 480px;
+		width: 270px;
+	}
+}
